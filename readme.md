@@ -1,6 +1,6 @@
 # How to
 
-- git clone welcometrack
+- git clone https://github.com/madbean/welcometrack.git
 
 ## Docker
 
