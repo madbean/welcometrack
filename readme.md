@@ -16,7 +16,7 @@
 
 ## Java Service
 - cd csv.reader
-- demarrer le service : "java -jar ./target/csv.reader-0.0.1-SNAPSHOT.jar"
+- demarrer le service : "java -jar ./csv.reader-0.0.1-SNAPSHOT.jar"
 
 ## liens utils
 
