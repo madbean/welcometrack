@@ -1,6 +1,6 @@
 # How to
 
-- git clone welcometrack
+- git clone https://github.com/madbean/welcometrack.git
 
 ## Docker
 
@@ -22,11 +22,12 @@
 
 - mongo ui : http://localhost:8081
     - after postman test check : http://localhost:8081/db/test/clients
-- phpmyadmin : http://localhost:8006
+    - do a "docker-compose up -d" if not started first time
+- phpmyadmin : http://localhost:8006/phpmyadmin/index.php
     - login: root
     - password: lxit
 - kafka ui : http://0.0.0.0:8000
-- kibana : http://localhost:5601/app/kiban
+- kibana : http://localhost:5601
     - uncheck : Index contains time-based events  
     - Index name or pattern: *
 
