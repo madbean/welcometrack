@@ -27,7 +27,7 @@
     - login: root
     - password: lxit
 - kafka ui : http://0.0.0.0:8000
-- kibana : http://localhost:5601/app/kiban
+- kibana : http://localhost:5601
     - uncheck : Index contains time-based events  
     - Index name or pattern: *
 
