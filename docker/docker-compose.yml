@@ -83,8 +83,6 @@ services:
       - ./mongo-ui/data:/data/db
     environment:
       - ME_CONFIG_MONGODB_SERVER=mongo
-    depends_on:
-      - mongo
 
   elasticsearch:
     image: elasticsearch:2.4
