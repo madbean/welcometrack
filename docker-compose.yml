@@ -13,7 +13,7 @@ services:
     ports:
       - '9092:9092'
     volumes:
-      - ./kafka-data:/bitnami/kafka
+      - ./data/kafka-data:/bitnami/kafka
     expose:
       - 9093
     depends_on:
@@ -64,7 +64,7 @@ services:
     expose:
       - 3306
     volumes:
-      - ./mysql-data:/mysql-data
+      - ./data/mysql-data:/mysql-data
 
   mongo:
     image: 'bitnami/mongodb:latest'
@@ -73,14 +73,14 @@ services:
     expose:
       - 27017
     volumes:
-      - ./mongo-data/data:/bitnami
+      - ./data/mongo-data/data:/bitnami
 
   mongo-ui:
     ports:
       - "8081:8081"
     image: mongo-express
     volumes:
-      - ./mongo-ui/data:/data/db
+      - ./data/mongo-ui/data:/data/db
     environment:
       - ME_CONFIG_MONGODB_SERVER=mongo
 
@@ -89,7 +89,7 @@ services:
     ports:
       - "9200:9200"
     volumes:
-      - ./elastic-data/:/usr/share/elasticsearch/data/
+      - ./data/elastic-data/:/usr/share/elasticsearch/data/
 
   kibana:
     image: kibana:4.6

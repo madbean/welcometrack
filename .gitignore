@@ -1,6 +1,2 @@
 data-loader/node_modules
-docker/elastic-data
-docker/kafka-data
-docker/mysql-data
-docker/mongo-ui
-docker/mongo-data
+data
